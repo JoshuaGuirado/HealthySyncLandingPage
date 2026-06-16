@@ -606,78 +606,70 @@ button {
 }
 
 /* =========================================
-   FOOTER
-========================================= */
+   FOOTER (RODAPÉ)
+   Estilização simplificada e limpa para fácil explicação
+   ========================================= */
 .footer {
-    padding: 5rem 0 2rem;
+    padding: 4rem 0 2rem; /* Espaçamento interno (top, lateral, bottom) */
 }
 
+/* Container do rodapé estruturado usando Flexbox para separar o conteúdo */
 .footer-container {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    gap: 4rem;
-    margin-bottom: 4rem;
+    display: flex; /* Alinha os blocos lado a lado */
+    justify-content: space-between; /* Distribui um bloco para a esquerda e o outro para a direita */
+    align-items: flex-start; /* Alinha os blocos pelo topo */
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores (celulares) */
+    gap: 3rem; /* Espaço entre os blocos caso fiquem lado a lado */
+    margin-bottom: 3rem; /* Margem inferior antes da linha divisória */
 }
 
+/* Descrição rápida da marca no rodapé */
 .footer-brand p {
     color: var(--text-muted);
-    margin: 1.5rem 0;
+    margin: 1rem 0; /* Margem em cima e embaixo */
     font-size: 0.95rem;
-    max-width: 300px;
+    max-width: 350px; /* Limita a largura do parágrafo */
 }
 
+/* Estilo do título da área de redes sociais */
+.footer-social h4 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Container flexbox para alinhar os ícones das redes sociais */
 .social-links {
     display: flex;
     gap: 1rem;
 }
 
+/* Estilização individual de cada botão de rede social (círculos) */
 .social-links a {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
+    border-radius: 50%; /* Torna o botão redondo */
+    background: var(--bg-card); /* Fundo semi-transparente */
+    border: 1px solid var(--border-color); /* Borda fina */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Centraliza o ícone verticalmente */
+    justify-content: center; /* Centraliza o ícone horizontalmente */
     color: var(--text-main);
-    transition: var(--transition);
+    transition: var(--transition); /* Efeito suave no hover */
 }
 
+/* Efeito ao passar o mouse (hover) nas redes sociais */
 .social-links a:hover {
-    background: var(--primary);
+    background: var(--primary); /* Troca o fundo para a cor primária */
     border-color: var(--primary);
 }
 
-.footer-links {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-.link-column h4 {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-}
-
-.link-column a {
-    display: block;
-    color: var(--text-muted);
-    margin-bottom: 0.8rem;
-    font-size: 0.95rem;
-    transition: var(--transition);
-}
-
-.link-column a:hover {
-    color: var(--primary);
-}
-
+/* Área inferior de direitos autorais */
 .footer-bottom {
-    text-align: center;
+    text-align: center; /* Centraliza o texto */
     color: var(--text-muted);
     font-size: 0.9rem;
-    border-top: 1px solid var(--border-color);
-    padding-top: 2rem;
+    border-top: 1px solid var(--border-color); /* Linha divisória horizontal */
+    padding-top: 2rem; /* Espaço acima do texto, após a linha */
 }
 
 /* =========================================
