@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Sync - Seu histórico médico unificado e inteligente</title>
+    <meta name="description" content="Centralize informações médicas e utilize Inteligência Artificial para tirar dúvidas sobre exames, históricos e vacinas.">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Estrutura Semântica: O <header> facilita o SEO e a acessibilidade -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="ph ph-heartbeat"></i>
+                Health Sync
+            </a>
+            <nav class="nav-links">
+                <a href="#home">Início</a>
+                <a href="#funcionalidades">Funcionalidades</a>
+                <a href="#como-funciona">Como Funciona</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Lateral Mobile (Aparece via CSS Media Query em telas < 768px) -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="close-menu" id="close-menu">
+            <i class="ph ph-x"></i>
+        </button>
+        <nav class="mobile-nav-links">
+            <a href="#home">Início</a>
+            <a href="#funcionalidades">Funcionalidades</a>
+            <a href="#como-funciona">Como Funciona</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section: Primeiro impacto visual (Apresentação principal do produto) -->
+    <section class="hero" id="home">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-container">
+            <div class="hero-content reveal-up">
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    O futuro da saúde digital chegou
+                </div>
+                <h1 class="hero-title">
+                    Seu histórico médico <span class="text-gradient">unificado</span> e <span class="text-gradient">inteligente</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Centralize exames, receitas e vacinas em um só lugar. Nossa Inteligência Artificial tira suas dúvidas e analisa seu histórico médico em segundos.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary btn-large" onclick="alert('Funcionalidade em desenvolvimento!')">Começar Gratuitamente</button>
+                </div>
+            </div>
+            <div class="hero-image-wrapper reveal-left">
+                <div class="glass-card mockup-card">
+                    <div class="mockup-header">
+                        <div class="mockup-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="mockup-title">Assistente Virtual IA</div>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="chat-message user">Quais foram os resultados do meu último hemograma?</div>
+                        <div class="chat-message ai">
+                            <i class="ph ph-sparkle ai-icon"></i>
+                            Analisando seus dados... Seu último hemograma do dia 12/05/2026 está dentro da normalidade. Os leucócitos estão em 6.500/mm³, o que é um ótimo sinal!
+                        </div>
+                        <div class="chat-message user">E sobre a vacina de Tétano?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funcionalidades: Organizadas em CSS Grid para adaptação automática -->
+    <section class="features" id="funcionalidades">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Tudo que você precisa em um só lugar</h2>
+                <p class="section-description">O Health Sync oferece ferramentas completas para você ter controle total sobre a sua saúde e da sua família.</p>
+            </div>
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card reveal-up" style="--delay: 0.1s">
+                    <div class="feature-icon bg-blue">
+                        <i class="ph ph-folders"></i>
+                    </div>
+                    <h3>Prontuário Unificado</h3>
+                    <p>Todos os seus exames, laudos e receitas médicas organizados cronologicamente e acessíveis de qualquer lugar.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card reveal-up" style="--delay: 0.2s">
+                    <div class="feature-icon bg-purple">
+                        <i class="ph ph-brain"></i>
+                    </div>
+                    <h3>IA Médica Integrada</h3>
+                    <p>Nossa IA treinada em dados médicos ajuda a interpretar exames complexos e responde suas dúvidas de forma simples.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card reveal-up" style="--delay: 0.3s">
+                    <div class="feature-icon bg-green">
+                        <i class="ph ph-shield-check"></i>
+                    </div>
+                    <h3>Segurança Máxima</h3>
+                    <p>Seus dados são criptografados de ponta a ponta. Apenas você e os médicos que você autorizar possuem acesso.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature-card reveal-up" style="--delay: 0.4s">
+                    <div class="feature-icon bg-orange">
+                        <i class="ph ph-syringe"></i>
+                    </div>
+                    <h3>Controle de Vacinas</h3>
+                    <p>Mantenha a carteirinha de vacinação atualizada digitalmente e receba alertas para as próximas doses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona: Contém elementos de CSS Animation (efeito flutuante) -->
+    <section class="how-it-works" id="como-funciona">
+        <div class="container">
+            <div class="how-container">
+                <div class="how-text reveal-left">
+                    <h2 class="section-title">Como o Health Sync <span class="text-gradient">funciona?</span></h2>
+                    <p class="section-description">Um processo simples, rápido e transparente para transformar a maneira como você cuida da sua saúde.</p>
+                    <ul class="steps-list">
+                        <li class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Crie sua conta</h4>
+                                <p>Cadastre-se gratuitamente em menos de 2 minutos.</p>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Importe seus dados</h4>
+                                <p>Faça upload de PDFs, imagens de exames ou conecte com laboratórios parceiros.</p>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Interaja com a IA</h4>
+                                <p>Faça perguntas, gere resumos para seu médico e acompanhe sua evolução.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Lado Direito da seção "Como Funciona": Mockup visual do painel com animações -->
+                <div class="how-image reveal-right">
+                    <!-- Card com efeito de vidro (Glassmorphism) que serve como container do mockup -->
+                    <div class="glass-card feature-showcase">
+                        <!-- Container principal do mockup do painel de controle (dashboard) -->
+                        <div class="dashboard-mockup">
+                            <!-- Nova imagem decorativa gerada para mostrar a interface real do sistema no Dark Mode -->
+                            <img src="img/dashboard_mockup.png" alt="Interface do Dashboard Health Sync" class="mockup-img">
+                        </div>
+                        <!-- Elemento flutuante decorativo simulando o arquivo PDF de Exame de Sangue -->
+                        <div class="floating-element float-1"><i class="ph ph-file-pdf"></i> Exame_Sangue.pdf</div>
+                        <!-- Elemento flutuante decorativo simulando o gráfico ou alerta de Glicemia Estável -->
+                        <div class="floating-element float-2"><i class="ph ph-activity"></i> Glicemia Estável</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé: Utilizando a tag semântica <footer> -->
+    <footer class="footer" id="contato">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <i class="ph ph-heartbeat"></i>
+                    Health Sync
+                </a>
+                <p>O seu hub digital para gestão de saúde. Conectando pacientes, dados e médicos com inteligência artificial.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/profjoaoferlini/" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="https://www.linkedin.com/in/dacio-fernando-542168232/" target="_blank"><i class="ph ph-linkedin-logo"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>Produto</h4>
+                    <a href="#">Funcionalidades</a>
+                    <a href="#">Preços</a>
+                    <a href="#">Segurança</a>
+                </div>
+                <div class="link-column">
+                    <h4>Empresa</h4>
+                    <a href="#">Sobre Nós</a>
+                    <a href="#">Carreiras</a>
+                    <a href="#">Contato</a>
+                </div>
+                <div class="link-column">
+                    <h4>Legal</h4>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Privacidade</a>
+                    <a href="#">LGPD</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Health Sync. Todos os direitos reservados. Projeto Acadêmico.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
